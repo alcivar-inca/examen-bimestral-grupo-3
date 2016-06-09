@@ -16,6 +16,13 @@ def archivo():
 	print ("Existen "+str(contador+1)+" saltos de linea")
 	print ("Existen "+str(palab) +" palabras")
 
+	archi=open('datosEjercicio3.txt', 'w')
+	archi.close()
+
+	archi=open('datosEjercicio3.txt', 'a')
+	archi.write("Existen "+str(contador+1)+" saltos de linea\n")
+	archi.write("Existen "+str(palab) +" palabras")
+	archi.close()
 
 archivo()
 	
